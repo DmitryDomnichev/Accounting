@@ -1,0 +1,107 @@
+.title-name {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 90px;
+    width: 900px;
+    margin-left: 60px;
+}
+
+.first {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+.second {
+    color: white;
+    font-size: 24px;
+}
+
+.block {
+    width: 900px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+/* Основной контейнер сетки */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки одинаковой ширины */
+    gap: 20px; /* Расстояние между колонками */
+}
+
+/* Оформление заголовков колонок */
+.grid-column {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Заголовки секций */
+.grid-column h3 {
+    color: #ffffff;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Оформление строк внутри колонок */
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Три равные колонки */
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+}
+
+/* Стилизация для текста в строках */
+.grid-row span {
+    font-size: 16px;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+/* Выравнивание категорий в левой колонке */
+.grid-column--left .grid-row {
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+}
+
+/* Выравнивание категорий в левой части */
+.grid-column--left .grid-row span:first-child {
+    text-align: left;
+}
+
+/* Выравнивание суммы справа в левой колонке */
+.grid-column--left .grid-row span:last-child {
+    text-align: right;
+}
+
+/* Выравнивание значений в правой колонке */
+.grid-column:not(.grid-column--left) .grid-row span:first-child {
+    text-align: left; /* Категория выравнивается слева */
+}
+
+.grid-column:not(.grid-column--left) .grid-row span:nth-child(2) {
+    text-align: center; /* Ожидание выравнивается по центру */
+}
+
+.grid-column:not(.grid-column--left) .grid-row span:last-child {
+    text-align: right; /* Сумма выравнивается справа */
+}
+
+/* Оформление последнего ряда без нижней границы */
+.grid-row:last-child {
+    border-bottom: none;
+}
+
+/* Кнопка формы */
+.btn-transaction {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-transaction:hover {
+    background-color: #45a049;
+}

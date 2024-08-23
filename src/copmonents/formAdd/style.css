@@ -1,0 +1,88 @@
+.form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 50px;
+    padding: 20px;
+    width: 900px;
+    /*background-color: #1e1e1e; !* Тёмный фон *!*/
+    /*border: 2px solid #333;*/
+    border-radius: 10px;
+}
+
+/* Стили для контейнера выбора типа транзакции */
+.transaction {
+    display: flex;
+    align-items: center;
+}
+
+.transaction label {
+    font-size: 30px;
+    color: #ddd; /* Светлый цвет текста */
+    margin-right: 10px;
+}
+
+.transaction select {
+    background-color: #333;
+    color: #fff;
+    padding: 11px 29px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 120px;
+}
+
+/* Стили для категории */
+.category, .sum {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    width: 120px;
+    margin-top: -28px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.category label, .sum label {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 5px;
+}
+
+.category input, .sum input {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+}
+
+/* Стили для кнопки */
+.btn-transaction {
+    background-color: #444;
+    width: 200px;
+    color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-transaction:hover {
+    background-color: #555;
+}
