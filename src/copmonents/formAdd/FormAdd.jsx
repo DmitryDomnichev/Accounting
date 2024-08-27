@@ -9,7 +9,7 @@ const FormAdd = ({newIncome, handleInputChange, handleSubmit}) => {
                 <label></label>
                 <select name="type" value={newIncome.type} onChange={handleInputChange}>
                     <option value="income">Доход</option>
-                    <option value="consumption">Расход</option>
+                    <option className='consumption-btn' value="consumption">Расход</option>
                 </select>
             </div>
 

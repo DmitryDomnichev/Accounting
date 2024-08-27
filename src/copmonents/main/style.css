@@ -105,3 +105,41 @@
 .btn-transaction:hover {
     background-color: #45a049;
 }
+
+.column-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.consumption-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+.expectation {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 88px;
+}
+
+.consumption {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.undo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 100px;
+    margin-left: 60px;
+    border-radius: 10px ;
+    background: #2C2C2C;
+    width: 290px;
+    height: 50px;
+    color: white;
+}
